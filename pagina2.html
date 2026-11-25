@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualStore - Catálogo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="encabezado1"><h1>VirtualStore</h1></div>
+        <div class="encabezado2"><h2>The Best Online Shop 😁</h2></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pagina2.html" class="activo">Catálogo</a>
+            <a href="pagina3.html">Ubicación</a>
+            <span class="carrito-icono">🛒 <span id="contador">0</span></span>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="titulo-seccion">Nuestros productos</h2>
+
+        <section class="catalogo">
+            <article class="producto reveal">
+                <div class="producto-img">🎧</div>
+                <h3>Audífonos</h3>
+                <p class="precio">$25.00</p>
+                <button class="btn-agregar" data-nombre="Audífonos" data-precio="25">Agregar</button>
+            </article>
+
+            <article class="producto reveal">
+                <div class="producto-img">⌚</div>
+                <h3>Reloj inteligente</h3>
+                <p class="precio">$45.00</p>
+                <button class="btn-agregar" data-nombre="Reloj inteligente" data-precio="45">Agregar</button>
+            </article>
+
+            <article class="producto reveal">
+                <div class="producto-img">⌨️</div>
+                <h3>Teclado</h3>
+                <p class="precio">$30.00</p>
+                <button class="btn-agregar" data-nombre="Teclado" data-precio="30">Agregar</button>
+            </article>
+
+            <article class="producto reveal">
+                <div class="producto-img">🖱️</div>
+                <h3>Mouse</h3>
+                <p class="precio">$15.00</p>
+                <button class="btn-agregar" data-nombre="Mouse" data-precio="15">Agregar</button>
+            </article>
+        </section>
+
+        <section class="carrito" id="carrito">
+            <h2>🛒 Tu carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p class="total">Total: $<span id="total">0.00</span></p>
+            <button id="vaciar" class="btn">Vaciar carrito</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 VirtualStore - Todos los derechos reservados</p>
+    </footer>
+
+    <div id="aviso">Producto agregado ✔</div>
+
+    <script src="jss/script.js"></script>
+</body>
+</html>
